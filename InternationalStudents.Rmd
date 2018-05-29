@@ -51,7 +51,7 @@ TotalCountry[,4:13]<-list(NULL)
 TotalCountry<-full_join(TotalCountry,country106,by="國別")
 TotalCountry[,5:14]<-list(NULL)
 TotalCountry[is.na(TotalCountry)]<-0
-TotalCountry$total<-rowSums(TotalCountry[,2:4])
+TotalCountry$total<-rowSums(TotalCountry[,2:5])
 TotalCountry[,2:5]<-list(NULL)
 ans1_1<-TotalCountry[order(TotalCountry$total,decreasing=T),]
 head(ans1_1,10)
