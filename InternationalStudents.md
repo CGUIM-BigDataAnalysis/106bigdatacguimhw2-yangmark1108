@@ -479,40 +479,10 @@ colnames(countryname)<-c("ISO3","English","國別")
 Ecometw<-merge(cometw,countryname,by="國別")
 colnames(Ecometw)<-c("國名","洲別","value","ISO3","region")
 ans8<-country_choropleth(Ecometw)
-```
-
-    ## Warning in super$initialize(country.map, user.df): Your data.frame contains
-    ## the following regions which are not mappable: Singapore
-
-    ## Warning in self$bind(): The following regions were missing and are being
-    ## set to NA: afghanistan, angola, azerbaijan, moldova, madagascar, mexico,
-    ## macedonia, mali, myanmar, montenegro, mongolia, mozambique, mauritania,
-    ## burundi, malawi, namibia, france, niger, nigeria, nicaragua, oman,
-    ## pakistan, panama, peru, papua new guinea, north korea, benin, portugal,
-    ## paraguay, israel, qatar, romania, rwanda, western sahara, saudi arabia,
-    ## sudan, burkina faso, south sudan, senegal, solomon islands, sierra leone,
-    ## el salvador, somaliland, somalia, republic of serbia, suriname, slovakia,
-    ## slovenia, swaziland, syria, chad, togo, tajikistan, turkmenistan, east
-    ## timor, bulgaria, trinidad and tobago, tunisia, turkey, taiwan, united
-    ## republic of tanzania, uganda, ukraine, uruguay, uzbekistan, the bahamas,
-    ## venezuela, vanuatu, yemen, south africa, zambia, zimbabwe, bosnia and
-    ## herzegovina, belarus, albania, belize, bolivia, brazil, bhutan, botswana,
-    ## central african republic, switzerland, chile, united arab emirates, china,
-    ## ivory coast, cameroon, democratic republic of the congo, republic of
-    ## congo, colombia, costa rica, cuba, northern cyprus, cyprus, argentina,
-    ## czech republic, djibouti, dominican republic, algeria, ecuador, egypt,
-    ## eritrea, spain, armenia, estonia, ethiopia, fiji, gabon, georgia, ghana,
-    ## antarctica, guinea, gambia, guinea bissau, equatorial guinea, greece,
-    ## guatemala, guyana, honduras, croatia, haiti, hungary, ireland, iran, iraq,
-    ## italy, jamaica, jordan, kazakhstan, kenya, kyrgyzstan, cambodia, south
-    ## korea, kosovo, kuwait, laos, lebanon, liberia, libya, lesotho, lithuania,
-    ## luxembourg, latvia, morocco
-
-``` r
 ans8
 ```
 
-![](InternationalStudents_files/figure-markdown_github/FromTWNAbMap-1.png)
+![](InternationalStudents_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 綜合分析
 --------
@@ -521,7 +491,7 @@ ans8
 
 9-1:
 
-![](InternationalStudents_files/figure-markdown_github/unnamed-chunk-3-1.png)![](InternationalStudents_files/figure-markdown_github/unnamed-chunk-3-2.png)
+![](InternationalStudents_files/figure-markdown_github/unnamed-chunk-4-1.png)![](InternationalStudents_files/figure-markdown_github/unnamed-chunk-4-2.png)
 
 從這兩個面量圖切入的話，來到台灣讀書的來源國是以亞洲的北亞、東北亞及東南亞、美洲的北美、大洋洲上的澳洲及歐洲為主，而在南亞、中南美和非洲也有一些，其中中南美洲來的學生比非洲來的還多一點；離台讀書的留學生的留學國則是以亞洲的東北亞、美洲的北美以及歐洲為主，跟來台灣讀書的學生的來源國來比對的話，發現北亞、東南亞、南美洲離台的留學生都不怎麼愛去，尤其是非洲以及中亞，這兩個地區，根本沒有人去
 

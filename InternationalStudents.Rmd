@@ -192,7 +192,7 @@ knitr::kable(head(ans7,10))
 ```
 
 ### 台灣學生最喜歡去哪些國家留學面量圖
-```{r FromTWNAbMap}
+```{r warning=FALSE}
 countryname<-read_csv("C:/Users/User/Desktop/CountriesComparisionTable.csv")
 colnames(countryname)<-c("ISO3","English","國別")
 Ecometw<-merge(cometw,countryname,by="國別")
